@@ -1,7 +1,7 @@
 from loguru import logger
 import random
 
-from .settings import *
+from game.settings import *
 
 
 class Segment:

@@ -5,9 +5,9 @@ import sys
 import pygame
 from loguru import logger
 
-from .items import Segment, Food
-from .rays import SnakeRay
-from .settings import *
+from game.items import Segment, Food
+from game.rays import SnakeRay
+from game.settings import *
 
 # Текстуры для игры
 SEGMENT = pygame.transform.scale(pygame.image.load(os.path.join(f"{os.getcwd()}/game/textures/segment.png")), (BLOCKS_SIZE, BLOCKS_SIZE))

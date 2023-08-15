@@ -1,4 +1,4 @@
-from .settings import *
+from game.settings import *
 
 
 class SnakeRay:
