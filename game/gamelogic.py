@@ -5,14 +5,14 @@ import sys
 import pygame
 from loguru import logger
 
-from items import Segment, Food
-from rays import SnakeRay
-from settings import *
+from .items import Segment, Food
+from .rays import SnakeRay
+from .settings import *
 
 # Текстуры для игры
-SEGMENT = pygame.transform.scale(pygame.image.load(os.path.join("textures/segment.png")), (BLOCKS_SIZE, BLOCKS_SIZE))
-HEAD = pygame.transform.scale(pygame.image.load(os.path.join("textures/head.png")), (BLOCKS_SIZE, BLOCKS_SIZE))
-FOOD = pygame.transform.scale(pygame.image.load(os.path.join("textures/food.png")), (BLOCKS_SIZE, BLOCKS_SIZE))
+SEGMENT = pygame.transform.scale(pygame.image.load(os.path.join(f"{os.getcwd()}/game/textures/segment.png")), (BLOCKS_SIZE, BLOCKS_SIZE))
+HEAD = pygame.transform.scale(pygame.image.load(os.path.join(f"{os.getcwd()}/game/textures/head.png")), (BLOCKS_SIZE, BLOCKS_SIZE))
+FOOD = pygame.transform.scale(pygame.image.load(os.path.join(f"{os.getcwd()}/game/textures/food.png")), (BLOCKS_SIZE, BLOCKS_SIZE))
 
 # Создаем окно и задаем ему название.
 screen = pygame.display.set_mode(size=WINDOW_SIZE)
